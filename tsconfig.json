@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    // ...other options
     "jsx": "react-jsx",
-    "strictNullChecks": true // Recommended for better type inference
+    "strictNullChecks": true,
+    "types": ["vite/client"] // 👈 Add this if using Vite
   },
   "include": ["**/*.ts", "**/*.tsx"]
 }
