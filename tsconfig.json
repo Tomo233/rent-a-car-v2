@@ -1,7 +1,8 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    // ...other options
+    "jsx": "react-jsx",
+    "strictNullChecks": true // Recommended for better type inference
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
 }
