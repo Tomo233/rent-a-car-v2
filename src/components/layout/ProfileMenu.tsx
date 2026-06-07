@@ -6,15 +6,17 @@ import Menu from "@mui/material/Menu";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
+
+import CustomMenuItem from "./CustomMenuItem";
 import ProfileImage from "../../assets/avatar.jpg";
+
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Person2Icon from "@mui/icons-material/Person2";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import CarRentalIcon from "@mui/icons-material/CarRental";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import AccountMenuItem from "./AccountMenuItem";
 
-export default function AccountMenu() {
+function ProfileMenu() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -27,15 +29,14 @@ export default function AccountMenu() {
   };
 
   return (
-    <>
-      <Box sx={{ display: "flex", alignItems: "center" }}>
+    <div className="hidden sm:block">
+      <Box sx={{ display: "flex", alignItems: "center" }} onClick={handleClick}>
         <Avatar sx={{ width: 48, height: 48 }}>
           <img src={ProfileImage} alt="ProfileIMage" />
         </Avatar>
         <p className="ml-2 font-semibold text-white">Tomo</p>
         <Tooltip title="Account settings">
           <IconButton
-            onClick={handleClick}
             size="small"
             aria-controls={open ? "account-menu" : undefined}
             aria-haspopup="true"
@@ -77,26 +78,28 @@ export default function AccountMenu() {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <AccountMenuItem onClick={handleClose}>
-          <Person2Icon sx={{ mr: "3px" }} />
+        <CustomMenuItem onClick={handleClose}>
+          <Person2Icon />
           Profile
-        </AccountMenuItem>
-        <AccountMenuItem onClick={handleClose}>
-          <CalendarMonthIcon sx={{ mr: "3px" }} />
+        </CustomMenuItem>
+        <CustomMenuItem onClick={handleClose}>
+          <CalendarMonthIcon />
           Calendar
-        </AccountMenuItem>
+        </CustomMenuItem>
         <Divider />
-        <AccountMenuItem onClick={handleClose}>
-          <CarRentalIcon sx={{ mr: "3px" }} />
+        <CustomMenuItem onClick={handleClose}>
+          <CarRentalIcon />
           Add new car
-        </AccountMenuItem>
+        </CustomMenuItem>
         <Divider />
 
-        <AccountMenuItem onClick={handleClose}>
-          <ExitToAppIcon sx={{ mr: "3px" }} />
+        <CustomMenuItem onClick={handleClose}>
+          <ExitToAppIcon />
           Sign out
-        </AccountMenuItem>
+        </CustomMenuItem>
       </Menu>
-    </>
+    </div>
   );
 }
+
+export default ProfileMenu;
