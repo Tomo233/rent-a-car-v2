@@ -1,10 +1,12 @@
 import Header from "../components/layout/Header";
+import HeroSection from "../components/layout/HeroSection";
 
 function HomePage() {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <HeroSection />
+    </>
   );
 }
 

@@ -5,7 +5,7 @@ import ProfileMenu from "./ProfileMenu";
 
 function Header() {
   return (
-    <header className="block bg-black pt-5">
+    <header className="block bg-transparent pt-5">
       <div className="container mx-auto flex items-center justify-between gap-10">
         <div className="items-center sm:flex sm:gap-5">
           <Logo />

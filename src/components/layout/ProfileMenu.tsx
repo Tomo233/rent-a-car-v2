@@ -30,7 +30,10 @@ function ProfileMenu() {
 
   return (
     <div className="hidden sm:block">
-      <Box sx={{ display: "flex", alignItems: "center" }} onClick={handleClick}>
+      <Box
+        sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}
+        onClick={handleClick}
+      >
         <Avatar sx={{ width: 48, height: 48 }}>
           <img src={ProfileImage} alt="ProfileIMage" />
         </Avatar>
