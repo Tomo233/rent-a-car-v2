@@ -59,7 +59,7 @@ function ProfileMenu() {
           paper: {
             elevation: 0,
             sx: {
-              backgroundColor: () => alpha("#284d88", 0.85),
+              backgroundColor: () => alpha("#284d88", 0.5),
               backdropFilter: "blur(12px)",
               color: "#f1f5f9",
               borderRadius: "12px",
