@@ -38,7 +38,7 @@ function SearchCars() {
   return (
     <form className="absolute left-1/2 w-10/12 -translate-x-1/2 sm:-bottom-12 sm:w-full lg:-bottom-5">
       <Container>
-        <div className="grid h-full w-full grid-cols-1 gap-1 rounded-xl border border-white/10 bg-slate-900/40 p-4 shadow-lg backdrop-blur-md sm:grid-cols-2 sm:gap-5 lg:grid-cols-6">
+        <div className="grid h-full w-full grid-cols-1 items-end gap-1 rounded-xl border border-white/10 bg-slate-900/40 p-4 shadow-lg backdrop-blur-md sm:grid-cols-2 sm:gap-5 lg:grid-cols-6">
           <div className="col-span-full grid grid-cols-1 items-start gap-1.5 lg:col-span-1">
             <SearchLabel>Location</SearchLabel>
 

@@ -1,17 +1,17 @@
 import Header from "../components/layout/Header";
 import HeroSection from "../components/layout/HeroSection";
+import HowWeWork from "../components/layout/HowWeWork";
 import Container from "../components/ui/Container";
 
 function HomePage() {
   return (
-    // <div className="relative mb-[500px]">
-    <div className="relative mb-125 h-200">
+    <div className="relative h-200">
       <Header />
       <Container>
         <HeroSection />
+        <HowWeWork />
       </Container>
     </div>
-    // </div>
   );
 }
 

@@ -11,11 +11,11 @@ function HeroSection() {
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
       />
 
-      <div className="grid place-items-center pt-10 sm:pt-24 md:pt-28 lg:pt-56">
+      <div className="grid place-items-center gap-3 pt-10 sm:pt-24 md:pt-28 lg:pt-56">
         <h1 className="text-center text-4xl font-bold text-white md:text-5xl lg:text-6xl">
           Cruise into Your Perfect Ride
         </h1>
-        <p className="w-3/4 pt-5 pb-5 text-center tracking-wide text-white sm:pb-0 sm:text-lg md:text-xl xl:w-1/2">
+        <p className="w-3/4 text-center tracking-wide text-white sm:pb-0 sm:text-lg md:text-xl xl:w-1/2">
           Welcome to our car <BlueSpan>rental application</BlueSpan>, where
           finding your ideal <BlueSpan>vehicle</BlueSpan> is effortless. With a
           diverse selection of cars ranging from <BlueSpan>compact</BlueSpan> to{" "}
