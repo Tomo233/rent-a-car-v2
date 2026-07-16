@@ -6,7 +6,7 @@ import Container from "../ui/Container";
 
 function Header() {
   return (
-    <header className="block bg-transparent pt-5">
+    <header className="block bg-transparent pt-3">
       <Container>
         <div className="flex items-center justify-between gap-10">
           <div className="items-center sm:flex sm:gap-5">
