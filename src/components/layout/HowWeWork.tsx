@@ -35,24 +35,24 @@ const STEPS_DATA = [
 
 function HowWeWork() {
   return (
-    <section className="mt-96">
-      <div className="mb-8 flex w-full items-center">
-        <div className="w-36 border-t border-gray-300"></div>
+    <section className="mt-32">
+      <div className="mb-8 flex w-full items-center justify-center">
+        <div className="border-t border-gray-300 sm:w-36"></div>
 
         <h2 className="text-4xl font-bold tracking-tight text-slate-900">
           How We <BlueSpan>Work</BlueSpan>
         </h2>
 
-        <div className="grow border-t border-gray-300"></div>
+        <div className="border-t border-gray-300 sm:grow"></div>
       </div>
 
-      <div className="flex justify-center gap-6">
+      <div className="grid grid-cols-1 place-items-center items-baseline md:grid-cols-3 md:gap-2">
         {STEPS_DATA.map((step) => (
           <div key={step.id} className="mt-7.5 w-full max-w-100">
             <img
               src={step.image}
               alt={step.alt}
-              className={`mx-auto ${step.imageWidthClass}`}
+              className={`mx-auto w-24 ${step.imageWidthClass}`}
             />
             <h3 className="my-2.5 text-center text-xl font-semibold text-slate-800">
               {step.title}

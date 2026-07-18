@@ -4,7 +4,7 @@ import CarLogo from "../../assets/car.png";
 function Logo() {
   return (
     <NavLink to="/">
-      <img src={CarLogo} className="w-20" alt="Car Logo" />
+      <img src={CarLogo} className="w-14" alt="Car Logo" />
     </NavLink>
   );
 }

@@ -5,13 +5,15 @@ import Container from "../components/ui/Container";
 
 function HomePage() {
   return (
-    <div className="relative h-200">
-      <Header />
-      <Container>
-        <HeroSection />
-        <HowWeWork />
-      </Container>
-    </div>
+    <>
+      <div className="relative h-200">
+        <Header />
+        <Container>
+          <HeroSection />
+        </Container>
+      </div>
+      <HowWeWork />
+    </>
   );
 }
 
