@@ -23,7 +23,7 @@ function HeroSection() {
           Experience convenience and reliability as you embark on your next
           journey with us.
         </p>
-        <button className="bg-button-color hidden cursor-pointer rounded-lg px-24 py-2.5 font-medium text-white shadow-md sm:block">
+        <button className="bg-secondary-color hidden cursor-pointer rounded-lg px-24 py-2.5 font-medium text-white shadow-md sm:block">
           Join Us
         </button>
       </div>

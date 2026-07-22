@@ -2,6 +2,7 @@ import Header from "../components/layout/Header";
 import HeroSection from "../components/layout/HeroSection";
 import HowWeWork from "../components/layout/HowWeWork";
 import Container from "../components/ui/Container";
+import RecomendedCars from "../features/cars/marketplace/RecomendedCars";
 
 function HomePage() {
   return (
@@ -12,7 +13,10 @@ function HomePage() {
           <HeroSection />
         </Container>
       </div>
-      <HowWeWork />
+      <Container>
+        <HowWeWork />
+        <RecomendedCars />
+      </Container>
     </>
   );
 }

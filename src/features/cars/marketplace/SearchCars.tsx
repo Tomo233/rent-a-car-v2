@@ -80,7 +80,7 @@ function SearchCars() {
 
           <button
             type="submit"
-            className="bg-button-color col-span-full h-10 cursor-pointer rounded-lg px-6 font-medium text-white shadow-md lg:col-span-1"
+            className="bg-secondary-color col-span-full h-10 cursor-pointer rounded-lg px-6 font-medium text-white shadow-md lg:col-span-1"
           >
             Search
           </button>
