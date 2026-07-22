@@ -2,6 +2,7 @@ import BlueSpan from "../ui/BlueSpan";
 import SupportAvatar from "../../assets/support.png";
 import TimeImage from "../../assets/time.png";
 import CarKeys from "../../assets/car-keys.png";
+import SectionDivider from "../ui/SectionDivider";
 
 const STEPS_DATA = [
   {
@@ -36,15 +37,9 @@ const STEPS_DATA = [
 function HowWeWork() {
   return (
     <section className="mt-32">
-      <div className="mb-8 flex w-full items-center justify-center">
-        <div className="border-t border-gray-300 sm:w-36"></div>
-
-        <h2 className="text-4xl font-bold tracking-tight text-slate-900">
-          How We <BlueSpan>Work</BlueSpan>
-        </h2>
-
-        <div className="border-t border-gray-300 sm:grow"></div>
-      </div>
+      <SectionDivider>
+        How We <BlueSpan>Work</BlueSpan>
+      </SectionDivider>
 
       <div className="grid grid-cols-1 place-items-center items-baseline md:grid-cols-3 md:gap-2">
         {STEPS_DATA.map((step) => (
@@ -63,8 +58,6 @@ function HowWeWork() {
           </div>
         ))}
       </div>
-
-      <div className="mt-12 h-px w-full bg-slate-300" />
     </section>
   );
 }

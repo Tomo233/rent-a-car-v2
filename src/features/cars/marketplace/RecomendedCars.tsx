@@ -1,4 +1,6 @@
 import CarImage from "../../../assets/mercedes-e-class.jpg";
+import BlueSpan from "../../../components/ui/BlueSpan";
+import SectionDivider from "../../../components/ui/SectionDivider";
 import CarDetails from "./CarDetails";
 
 const carData = [
@@ -34,6 +36,9 @@ const carData = [
 function RecomendedCars() {
   return (
     <div className="mt-10">
+      <SectionDivider>
+        <BlueSpan>Recomended</BlueSpan> Cars
+      </SectionDivider>
       <div className="my-32 flex items-center justify-center gap-10">
         {carData.map((car) => (
           <CarDetails car={car} key={car.name} />
