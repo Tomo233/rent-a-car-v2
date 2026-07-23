@@ -9,7 +9,7 @@ function CarDetails({ car }: { car: any }) {
   const { name, image, year, power, location, transmission, price } = car;
 
   return (
-    <div className="w-full max-w-sm overflow-hidden rounded-xl shadow-lg">
+    <div className="w-full max-w-xs overflow-hidden rounded-xl shadow-lg md:max-w-xs lg:max-w-sm">
       {/* Image Container */}
       <div className="flex h-48 items-center justify-center bg-[#F2F5FA] p-4">
         <img src={image} alt={name} className="h-full object-contain" />

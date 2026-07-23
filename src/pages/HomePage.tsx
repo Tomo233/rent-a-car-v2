@@ -2,7 +2,7 @@ import Header from "../components/layout/Header";
 import HeroSection from "../components/layout/HeroSection";
 import HowWeWork from "../components/layout/HowWeWork";
 import Container from "../components/ui/Container";
-import RecomendedCars from "../features/cars/marketplace/RecomendedCars";
+import RecommendedCars from "../features/cars/marketplace/RecommendedCars";
 
 function HomePage() {
   return (
@@ -14,8 +14,8 @@ function HomePage() {
         </Container>
       </div>
       <Container>
+        <RecommendedCars />
         <HowWeWork />
-        <RecomendedCars />
       </Container>
     </>
   );
