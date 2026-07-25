@@ -98,14 +98,12 @@ const SWIPER_CONFIG = {
   slidesPerGroup: 1,
   speed: 1200,
   navigation: true,
-  loop: true,
+  loop: false,
   breakpoints: {
-    // 640px to 1023px
     640: {
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
-    // 1024px+
     1024: {
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -118,7 +116,7 @@ function CarCarousel() {
   return (
     <Swiper {...SWIPER_CONFIG} className="mt-16">
       {carData.map((car) => (
-        <SwiperSlide key={car.name} className="mb-10">
+        <SwiperSlide key={Math.random()} className="mb-10">
           <div className="flex h-full w-full justify-center">
             <CarDetails car={car} />
           </div>
