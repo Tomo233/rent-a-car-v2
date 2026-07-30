@@ -1,8 +1,9 @@
 import Header from "../components/layout/Header";
-import HeroSection from "../components/layout/HeroSection";
-import HowWeWork from "../components/layout/HowWeWork";
 import Container from "../components/ui/Container";
+import HeroSection from "../components/layout/HeroSection";
 import RecommendedCars from "../features/cars/marketplace/RecommendedCars";
+import HowWeWork from "../components/layout/HowWeWork";
+import GetStarted from "../components/layout/GetStarted";
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
       <Container>
         <RecommendedCars />
         <HowWeWork />
+        <GetStarted />
       </Container>
     </>
   );

@@ -4,7 +4,7 @@ import SearchCars from "../../features/cars/marketplace/SearchCars";
 
 function HeroSection() {
   return (
-    <div>
+    <section>
       <img
         src={Road}
         alt="Road"
@@ -28,7 +28,7 @@ function HeroSection() {
         </button>
       </div>
       <SearchCars />
-    </div>
+    </section>
   );
 }
 
