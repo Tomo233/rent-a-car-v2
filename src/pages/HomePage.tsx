@@ -4,6 +4,7 @@ import HeroSection from "../components/layout/HeroSection";
 import RecommendedCars from "../features/cars/marketplace/RecommendedCars";
 import HowWeWork from "../components/layout/HowWeWork";
 import GetStarted from "../components/layout/GetStarted";
+import FaqSection from "../components/layout/FaqSection";
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
         <RecommendedCars />
         <HowWeWork />
         <GetStarted />
+        <FaqSection />
       </Container>
     </>
   );

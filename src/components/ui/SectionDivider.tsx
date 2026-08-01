@@ -5,7 +5,7 @@ function SectionDivider({ children }: { children: ReactNode }) {
     <div className="mt-20 mb-5 flex w-full items-center justify-center">
       <div className="flex-1 border-t border-gray-300"></div>
 
-      <h2 className="shrink-0 text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl sm:tracking-wider">
+      <h2 className="shrink text-center text-3xl font-bold tracking-tight text-slate-900 sm:shrink-0 sm:text-4xl sm:tracking-wider">
         {children}
       </h2>
 
