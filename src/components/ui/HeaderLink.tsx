@@ -8,7 +8,7 @@ type HeaderLinkProps = {
 
 function HeaderLink({ children, to }: HeaderLinkProps) {
   return (
-    <Link to={to} className="font-semibold text-white outline-0">
+    <Link to={to} className="font-semibold outline-0">
       {children}
     </Link>
   );

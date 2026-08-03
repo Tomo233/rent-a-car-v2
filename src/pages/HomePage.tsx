@@ -5,7 +5,7 @@ import RecommendedCars from "../features/cars/marketplace/RecommendedCars";
 import HowWeWork from "../components/layout/HowWeWork";
 import GetStarted from "../components/layout/GetStarted";
 import FaqSection from "../components/layout/FaqSection";
-
+import Footer from "../components/layout/Footer";
 function HomePage() {
   return (
     <>
@@ -21,6 +21,7 @@ function HomePage() {
         <GetStarted />
         <FaqSection />
       </Container>
+      <Footer />
     </>
   );
 }

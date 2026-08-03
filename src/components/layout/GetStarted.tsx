@@ -52,7 +52,7 @@ const trustPerksData = [
 
 function GetStarted() {
   return (
-    <section className="mx-2 mt-20 rounded-lg border border-gray-300 px-3 pb-8 sm:mx-0 sm:px-8">
+    <section className="mx-2 mt-32 rounded-lg border border-gray-300 px-3 pb-8 sm:mx-0 sm:px-8">
       <div className="items-center justify-between lg:flex">
         <div className="grid gap-y-14">
           <div className="mt-10 flex h-9 w-36 items-center gap-2 rounded-lg bg-slate-200 pl-1">
@@ -72,7 +72,7 @@ function GetStarted() {
             </p>
           </div>
           <div className="row-start-4 flex flex-col items-center gap-5 place-self-center sm:flex-row lg:row-start-3 lg:place-self-start">
-            <button className="bg-secondary-color cursor-pointer rounded-xl px-12 py-4 text-sm font-medium text-white">
+            <button className="bg-primary-color cursor-pointer rounded-xl px-12 py-4 font-medium text-white">
               Browse Cars
             </button>
             <button className="cursor-pointer rounded-xl border-2 border-gray-200 bg-white px-12 py-4 font-medium">

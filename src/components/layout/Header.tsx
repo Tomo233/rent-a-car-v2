@@ -11,7 +11,7 @@ function Header() {
         <div className="flex items-center justify-between gap-10">
           <div className="items-center sm:flex sm:gap-5">
             <Logo />
-            <nav className="hidden items-center sm:flex sm:gap-6">
+            <nav className="hidden items-center text-slate-200 sm:flex sm:gap-6">
               <HeaderLink to="#">Cars List</HeaderLink>
               <HeaderLink to="#">About Us</HeaderLink>
               <HeaderLink to="#">Help</HeaderLink>
