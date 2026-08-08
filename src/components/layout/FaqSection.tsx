@@ -37,7 +37,7 @@ export const questionsAndAnswers = [
 
 function FaqSection() {
   return (
-    <section className="my-36">
+    <section className="my-36" id="faq">
       <SectionDivider>
         Frequently Asked <BlueSpan>Questions</BlueSpan>
       </SectionDivider>

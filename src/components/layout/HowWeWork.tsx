@@ -36,7 +36,7 @@ const STEPS_DATA = [
 
 function HowWeWork() {
   return (
-    <section className="mt-24">
+    <section className="mt-24" id="help">
       <SectionDivider>
         How We <BlueSpan>Work</BlueSpan>
       </SectionDivider>

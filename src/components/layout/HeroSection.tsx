@@ -16,12 +16,11 @@ function HeroSection() {
           Cruise into Your Perfect Ride
         </h1>
         <p className="w-3/4 text-center tracking-wide text-white sm:pb-0 sm:text-lg md:text-xl xl:w-1/2">
-          Welcome to our car <BlueSpan>rental application</BlueSpan>, where
-          finding your ideal <BlueSpan>vehicle</BlueSpan> is effortless. With a
-          diverse selection of cars ranging from <BlueSpan>compact</BlueSpan> to{" "}
-          <BlueSpan>luxury</BlueSpan>, we cater to every traveler's needs.
-          Experience convenience and reliability as you embark on your next
-          journey with us.
+          Want more choices and exclusive deals?
+          <BlueSpan> Create an account </BlueSpan> or
+          <BlueSpan> Log in </BlueSpan>
+          now to explore our complete, diverse fleet and enjoy the full
+          convenience and reliability of booking your next journey with us.
         </p>
         <button className="bg-secondary-color hidden cursor-pointer rounded-lg px-24 py-2.5 font-medium text-white shadow-md sm:block">
           Join Us

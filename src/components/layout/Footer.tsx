@@ -1,6 +1,10 @@
+import Container from "../ui/Container";
+import Navigation from "./Navigation";
 import BlueSpan from "../ui/BlueSpan";
 import Logo from "../ui/Logo";
-import Container from "../ui/Container";
+import { Link } from "react-router";
+
+import { Divider } from "@mui/material";
 
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -9,9 +13,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import HeaderLink from "../ui/HeaderLink";
-import { Divider } from "@mui/material";
-import { Link } from "react-router";
 
 export const contactDetails = [
   {
@@ -121,11 +122,7 @@ function Footer() {
           <p className="text-center font-medium text-slate-500 sm:text-start">
             &copy; 2025 <BlueSpan>TL-Rent.</BlueSpan> All rights reserved.
           </p>
-          <nav className="hidden items-center text-slate-800 sm:flex sm:gap-6">
-            <HeaderLink to="#">Cars List</HeaderLink>
-            <HeaderLink to="#">About Us</HeaderLink>
-            <HeaderLink to="#">Help</HeaderLink>
-          </nav>
+          <Navigation textShade={950} />
         </div>
       </Container>
     </footer>

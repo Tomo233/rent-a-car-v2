@@ -52,7 +52,10 @@ const trustPerksData = [
 
 function GetStarted() {
   return (
-    <section className="mx-2 mt-32 rounded-lg border border-gray-300 px-3 pb-8 sm:mx-0 sm:px-8">
+    <section
+      id="about-us"
+      className="mx-2 mt-32 rounded-lg border border-gray-300 px-3 pb-8 sm:mx-0 sm:px-8"
+    >
       <div className="items-center justify-between lg:flex">
         <div className="grid gap-y-14">
           <div className="mt-10 flex h-9 w-36 items-center gap-2 rounded-lg bg-slate-200 pl-1">

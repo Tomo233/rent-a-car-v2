@@ -4,12 +4,12 @@ import CarCarousel from "./CarCarousel";
 
 function RecommendedCars() {
   return (
-    <div>
+    <section>
       <SectionDivider>
         <BlueSpan>Recommended</BlueSpan> Cars
       </SectionDivider>
       <CarCarousel />
-    </div>
+    </section>
   );
 }
 
