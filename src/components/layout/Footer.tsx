@@ -12,6 +12,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import HeaderLink from "../ui/HeaderLink";
 import { Divider } from "@mui/material";
 import { Link } from "react-router";
+
 export const contactDetails = [
   {
     id: "email",
@@ -48,9 +49,7 @@ function Footer() {
           <div className="grid">
             <div className="flex items-center justify-center sm:justify-start">
               <Logo />
-              <h2 className="text-4xl font-bold tracking-wide">
-                -<BlueSpan>Rent</BlueSpan>
-              </h2>
+              <BlueSpan size="text-3xl">-Rent</BlueSpan>
             </div>
             <p className="mt-3 max-w-96 text-center font-semibold tracking-wide text-slate-500 sm:max-w-full sm:text-start">
               Your trusted partner for car rentals. We provide a wide range of

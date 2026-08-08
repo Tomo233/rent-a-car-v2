@@ -1,7 +1,14 @@
 import { ReactNode } from "react";
 
-function BlueSpan({ children }: { children: ReactNode }) {
-  return <span className="text-primary-color font-bold">{children}</span>;
+type BlueSpanProps = {
+  children: ReactNode;
+  size?: "text-3xl" | "";
+};
+
+function BlueSpan({ children, size = "" }: BlueSpanProps) {
+  return (
+    <span className={`text-primary-color font-bold ${size}`}>{children}</span>
+  );
 }
 
 export default BlueSpan;
