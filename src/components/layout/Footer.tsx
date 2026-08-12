@@ -48,10 +48,7 @@ function Footer() {
       <Container>
         <div className="mb-8 grid grid-cols-1 place-items-start justify-items-center gap-10 sm:grid-cols-3 sm:gap-0">
           <div className="grid">
-            <div className="flex items-center justify-center sm:justify-start">
-              <Logo />
-              <BlueSpan size="text-3xl">-Rent</BlueSpan>
-            </div>
+            <Logo color="black" />
             <p className="mt-3 max-w-96 text-center font-semibold tracking-wide text-slate-500 sm:max-w-full sm:text-start">
               Your trusted partner for car rentals. We provide a wide range of
               vehicles at the best prices with excellent customer service.
