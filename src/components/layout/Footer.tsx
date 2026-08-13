@@ -47,12 +47,28 @@ function Footer() {
     <footer className="border border-slate-300 bg-slate-100 px-5 pt-20 pb-6 shadow-xl">
       <Container>
         <div className="mb-8 grid grid-cols-1 place-items-start justify-items-center gap-10 sm:grid-cols-3 sm:gap-0">
-          <div className="grid">
+          <div className="grid place-items-center sm:place-items-start">
             <Logo color="black" />
-            <p className="mt-3 max-w-96 text-center font-semibold tracking-wide text-slate-500 sm:max-w-full sm:text-start">
+            <p className="mt-3 max-w-96 text-center font-medium tracking-wide text-black sm:max-w-full sm:text-start">
               Your trusted partner for car rentals. We provide a wide range of
               vehicles at the best prices with excellent customer service.
             </p>
+            <div className="mt-5 flex items-center justify-center gap-3 sm:justify-start">
+              {socialLinks.map((item) => {
+                const { name, icon: Icon, url } = item;
+
+                return (
+                  <div key={name}>
+                    <a href={url}>
+                      <Icon
+                        className="text-primary-color box-content rounded-full bg-slate-300 p-3"
+                        fontSize="medium"
+                      />
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
           <div>
@@ -77,7 +93,7 @@ function Footer() {
               Contact
             </h3>
 
-            <div className="mt-2 grid max-w-24 gap-3 sm:max-w-full">
+            <div className="mt-2 grid max-w-52 gap-3 sm:max-w-full">
               {contactDetails.map((item) => {
                 const { id, icon: Icon, text, href } = item;
                 return (
@@ -88,23 +104,6 @@ function Footer() {
                     />
                     <a href={href} className="font-medium tracking-wide">
                       {text}
-                    </a>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="mt-5 flex items-center justify-center gap-3 sm:justify-start">
-              {socialLinks.map((item) => {
-                const { name, icon: Icon, url } = item;
-
-                return (
-                  <div key={name}>
-                    <a href={url}>
-                      <Icon
-                        className="text-primary-color box-content rounded-full bg-slate-300 p-3"
-                        fontSize="medium"
-                      />
                     </a>
                   </div>
                 );
