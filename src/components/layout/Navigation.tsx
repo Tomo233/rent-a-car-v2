@@ -6,7 +6,7 @@ export const navLinks = [
   { label: "Help", href: "/#help" },
 ];
 
-function Navigation({ textShade }: { textShade: 200 | 950 }) {
+function Navigation({ textShade }: { textShade: 50 | 950 }) {
   return (
     <nav className="hidden items-center sm:flex sm:gap-6">
       {navLinks.map(({ label, href }) => (
@@ -14,7 +14,7 @@ function Navigation({ textShade }: { textShade: 200 | 950 }) {
           to={href}
           smooth
           key={href}
-          className={`font-semibold outline-0 ${textShade == 200 ? "text-slate-200" : "text-slate-950"} `}
+          className={`font-semibold outline-0 ${textShade == 50 ? "text-slate-50" : "text-slate-950"} `}
         >
           {label}
         </NavHashLink>

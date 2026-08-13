@@ -9,7 +9,7 @@ function Header() {
         <div className="flex items-center gap-10 sm:justify-center md:justify-between">
           <div className="items-center sm:flex sm:gap-10">
             <Logo color="white" />
-            <Navigation textShade={200} />
+            <Navigation textShade={50} />
           </div>
 
           <div className="hidden items-center gap-3 sm:flex">
