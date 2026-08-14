@@ -4,7 +4,7 @@ export const navLinks = [
   { label: "FAQ", href: "/#faq" },
   { label: "About Us", href: "/#about-us" },
   { label: "Help", href: "/#help" },
-];
+] as const;
 
 function Navigation({ textShade }: { textShade: 50 | 950 }) {
   return (

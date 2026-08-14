@@ -4,7 +4,7 @@ import LockIcon from "@mui/icons-material/Lock";
 function HeroSection() {
   return (
     <section className="mx-2">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-3/4 bg-linear-to-b from-white/10 via-white/25 to-transparent md:hidden" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-3/4 bg-linear-to-b via-white/25 to-transparent md:hidden" />
       <img
         src={Road}
         alt="Road"
