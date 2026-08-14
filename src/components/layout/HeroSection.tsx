@@ -24,7 +24,7 @@ function HeroSection() {
         </button>
         <div className="flex items-center gap-3">
           <LockIcon className="text-black" />
-          <p className="font-bold tracking-wide text-black">
+          <p className="text-sm font-bold tracking-wide text-black sm:text-base">
             Secure. Simple. Tailored for your ride.
           </p>
         </div>

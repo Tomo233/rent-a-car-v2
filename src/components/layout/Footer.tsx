@@ -44,7 +44,10 @@ export const socialLinks = [
 
 function Footer() {
   return (
-    <footer className="border border-slate-300 bg-slate-100 px-5 pt-20 pb-6 shadow-xl">
+    <footer
+      id="help"
+      className="border border-slate-300 bg-slate-100 px-5 pt-20 pb-6 shadow-xl"
+    >
       <Container>
         <div className="mb-8 grid grid-cols-1 place-items-start justify-items-center gap-10 sm:grid-cols-3 sm:gap-0">
           <div className="grid place-items-center sm:place-items-start">

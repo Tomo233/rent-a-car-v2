@@ -54,7 +54,7 @@ function GetStarted() {
   return (
     <section
       id="about-us"
-      className="mx-2 mt-32 rounded-lg border border-gray-300 px-3 pb-8 sm:mx-0 sm:px-8"
+      className="mx-2 mt-24 rounded-lg border border-gray-300 px-3 pb-8 sm:mx-0 sm:px-8"
     >
       <div className="items-center justify-between lg:flex">
         <div className="grid gap-y-14">
