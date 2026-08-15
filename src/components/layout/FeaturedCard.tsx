@@ -11,7 +11,7 @@ function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
   return (
     <div className="flex w-full max-w-72 flex-col gap-2">
       <Icon
-        className="text-secondary-color box-content rounded-full bg-slate-300 p-3"
+        className="text-primary-color box-content rounded-full bg-slate-300 p-3"
         fontSize="large"
       />
       <div>

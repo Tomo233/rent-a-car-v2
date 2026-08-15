@@ -1,12 +1,15 @@
+import FeatureCard from "./FeaturedCard";
 import BlueSpan from "../ui/BlueSpan";
-import LanguageIcon from "@mui/icons-material/Language";
+import { HashLink } from "react-router-hash-link";
+import LaptopImage from "../../assets/laptop.png";
+
 import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
 import GppGoodIcon from "@mui/icons-material/GppGood";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
-import FeatureCard from "./FeaturedCard";
-import LaptopImage from "../../assets/laptop.png";
+import LanguageIcon from "@mui/icons-material/Language";
 import DoDisturbIcon from "@mui/icons-material/DoDisturb";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+
 const mainFeaturesData = [
   {
     id: 1,
@@ -54,7 +57,7 @@ function GetStarted() {
   return (
     <section
       id="about-us"
-      className="mx-2 mt-24 rounded-lg border border-gray-300 px-3 pb-8 sm:mx-0 sm:px-8"
+      className="mx-5 mt-24 rounded-lg border border-gray-300 px-5 pb-8 sm:mx-0 sm:px-8"
     >
       <div className="items-center justify-between lg:flex">
         <div className="grid gap-y-14">
@@ -78,9 +81,13 @@ function GetStarted() {
             <button className="bg-primary-color cursor-pointer rounded-xl px-12 py-4 font-medium text-white">
               Browse Cars
             </button>
-            <button className="cursor-pointer rounded-xl border-2 border-gray-200 bg-white px-12 py-4 font-medium">
+            <HashLink
+              to="#help"
+              smooth
+              className="cursor-pointer rounded-xl border-2 border-gray-200 bg-white px-12 py-4 font-medium"
+            >
               Learn More
-            </button>
+            </HashLink>
           </div>
           <div className="flex justify-between gap-5">
             {mainFeaturesData.map(({ icon, title, description }) => (
