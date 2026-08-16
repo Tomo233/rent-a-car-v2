@@ -2,7 +2,6 @@ import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableContainer from "@mui/material/TableContainer";
 import Paper from "@mui/material/Paper";
-import SectionDivider from "../ui/SectionDivider";
 import BlueSpan from "../ui/BlueSpan";
 import FaqItem from "./FaqItem";
 
@@ -37,12 +36,18 @@ export const questionsAndAnswers = [
 
 function FaqSection() {
   return (
-    <section className="my-36" id="faq">
-      <SectionDivider>
-        Frequently Asked <BlueSpan>Questions</BlueSpan>
-      </SectionDivider>
+    <section className="my-20" id="faq">
+      <div className="mt-20 mb-5 flex w-full items-center justify-center">
+        <div className="flex-1 border-t border-gray-300"></div>
 
-      <div className="flex justify-center pt-10">
+        <h2 className="shrink px-5 text-center text-3xl font-bold tracking-tight text-slate-900 sm:shrink-0 sm:px-0 sm:text-4xl sm:tracking-wider">
+          Frequently Asked <BlueSpan>Questions</BlueSpan>
+        </h2>
+
+        <div className="flex-1 border-t border-gray-300"></div>
+      </div>
+
+      <div className="mx-5 flex justify-center pt-10">
         <TableContainer
           component={Paper}
           style={{ width: "900px", maxHeight: "500px" }}

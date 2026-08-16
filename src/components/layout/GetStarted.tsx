@@ -57,7 +57,7 @@ function GetStarted() {
   return (
     <section
       id="about-us"
-      className="mx-5 mt-24 rounded-lg border border-gray-300 px-5 pb-8 sm:mx-0 sm:px-8"
+      className="mx-5 mt-24 rounded-lg border border-gray-300 bg-slate-100 px-5 pb-8 sm:mx-0 sm:px-8"
     >
       <div className="items-center justify-between lg:flex">
         <div className="grid gap-y-14">
@@ -107,7 +107,7 @@ function GetStarted() {
           alt=""
         />
       </div>
-      <div className="mt-10 flex justify-between gap-3 rounded-md border border-slate-300 bg-slate-50 px-3 py-8">
+      <div className="mt-10 flex justify-between gap-3 rounded-md px-3 py-8">
         {trustPerksData.map(({ icon, title, description }) => (
           <FeatureCard
             key={Math.random()}
